@@ -1,0 +1,91 @@
+body {
+	font-family: 'Verdana', sans-serif;
+}
+
+#content {
+	width: 600px;
+	margin: 0px auto;
+}
+
+#content > div {
+	border: 1px solid white;
+}
+
+#content > div.full_leet {
+	background-image: url('/static/confetti.png');
+	background-repeat: repeat-x;
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h1 {
+	font-size: 100px;
+	margin-top: 220px;
+	margin-bottom: 50px;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: normal;
+	height: 200px;
+}
+
+h2.partial_leet img {
+	display: none;
+}
+
+h2.full_leet img {
+	display: block;
+	margin: 20px auto;
+}
+
+h1 > span {
+	position: relative;
+	margin-right: -20px;
+}
+
+.party {
+	display: block;
+}
+
+.noparty {
+	display: none;
+}
+
+.icon {
+	position: absolute;
+}
+
+.h_10 .icon {
+	top: -5px;
+	left: 30px;
+	width: 30px;
+	height: 40px;
+	background-image: url('/static/hat1.png');
+}
+
+.m_1 .icon {
+	top: -10px;
+	left: 10px;
+	width: 54px;
+	height: 50px;
+	background-image: url('/static/hat2.png');
+}
+
+.h_1 .icon {
+	top: -40px;
+	left: 15px;
+	width: 50px;
+	height: 76px;
+	background-image: url('/static/hat3.png');
+}
+
+.m_10 .icon {
+	top: -20px;
+	left: 20px;
+	width: 50px;
+	height: 53px;
+	background-image: url('/static/hat4.png');
+}

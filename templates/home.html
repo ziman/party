@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block body %}
+	<div class="{{full_leet}}">
+	<h1>
+		<span class="h_10">
+			<span>{{ h_10 }}</span>
+			<span class="icon {{h_10_party}}"> </span>
+		</span>
+		<span class="h_1">
+			<span>{{ h_1 }}</span>
+			<span class="icon {{h_1_party}}"> </span>
+		</span>
+		<span>:</span>
+		<span class="m_10">
+			<span>{{ m_10 }}</span>
+			<span class="icon {{m_10_party}}"> </span>
+		</span>
+		<span class="m_1">
+			<span>{{ m_1 }}</span>
+			<span class="icon {{m_1_party}}"> </span>
+		</span>
+	</h1>
+	<h2 class="{{ full_leet }}">
+		{% if leet == 100 %}
+			Leet time! Party!
+		{% elif leet == 75 %}
+			75% leet time, whoa!
+		{% elif leet == 50 %}
+			50% leet time!
+		{% elif leet == 25 %}
+			Time leetness 25%.
+		{% else %}
+			Totally unleet time, come back later.
+		{% endif %}
+		<img src="/static/duckparty.png" />
+	</h2>
+	</div>
+{% endblock %}

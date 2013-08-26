@@ -1,7 +1,7 @@
 import flask
 import datetime
 
-DEBUG = True
+DEBUG = False
 SECRET_KEY = '89d164a62543df6a53b5ee157c18515c'
 
 app = flask.Flask(__name__)
@@ -11,7 +11,6 @@ app.config.from_envvar('PARTY_SETTINGS', silent=True)
 @app.route('/')
 def home():
     now = datetime.datetime.now()
-    now = datetime.datetime(2013,8,26,13,37,00)
     stuff = {'leet': 0}
     varnames = ['h_10', 'h_1', 'm_10', 'm_1']
 

@@ -1,5 +1,13 @@
 {% extends "base.html" %}
 
+{% block title %}
+	{% if leet == 100 %}
+		Leet time! Party!
+	{% else %}
+		{{leet}}% leet time
+	{% endif %}
+{% endblock %}
+
 {% block body %}
 	<div class="{{full_leet}}">
 	<h1>
